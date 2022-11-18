@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kdk-ru-4U4">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DetoxCamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="RdU-BV-dtB">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RdU-BV-dtB" secondAttribute="trailing" id="V2d-0t-1fT"/>
+                            <constraint firstItem="RdU-BV-dtB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZAS-dA-EF2"/>
+                            <constraint firstItem="RdU-BV-dtB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="seb-X1-iGN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RdU-BV-dtB" secondAttribute="bottom" id="tYF-Fe-4ZU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dZn-Gl-464"/>
+                    <connections>
+                        <outlet property="tableView" destination="RdU-BV-dtB" id="NHI-Fd-ZoJ"/>
+                        <segue destination="M6d-0k-dnF" kind="show" identifier="toDetailsVC" id="O9C-Zr-Szm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+        </scene>
+        <!--Details Second View Controller-->
+        <scene sceneID="lJi-pI-aMi">
+            <objects>
+                <viewController id="M6d-0k-dnF" customClass="DetailsSecondViewController" customModule="DetoxCamp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yr5-wj-Rfv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Detoks Adi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Mc-Cz-wN6">
+                                <rect key="frame" x="16" y="470" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="92P-wk-GPU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectImage" translatesAutoresizingMaskIntoConstraints="NO" id="JpO-Fc-RnM">
+                                <rect key="frame" x="16" y="138" width="325" height="248"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Malzemeler" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ynn-Yi-Ttq">
+                                <rect key="frame" x="16" y="528" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3J6-Ix-Wte"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Detoks Tarifi" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUD-Kv-lv4">
+                                <rect key="frame" x="16" y="587" width="361" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Fwd-2U-ATd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTH-gT-0QY">
+                                <rect key="frame" x="158" y="671" width="77" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="1JV-wB-QxV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Kaydet"/>
+                                <connections>
+                                    <action selector="SaveButton:" destination="M6d-0k-dnF" eventType="touchUpInside" id="zfo-Ey-67U"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xgy-nW-Hhn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Mc-Cz-wN6" firstAttribute="trailing" secondItem="ynn-Yi-Ttq" secondAttribute="trailing" id="1HM-Vb-8eN"/>
+                            <constraint firstItem="JpO-Fc-RnM" firstAttribute="leading" secondItem="yr5-wj-Rfv" secondAttribute="leadingMargin" id="8b0-jp-5s1"/>
+                            <constraint firstItem="JpO-Fc-RnM" firstAttribute="top" secondItem="xgy-nW-Hhn" secondAttribute="top" constant="35" id="Aw7-Mj-Kc1"/>
+                            <constraint firstItem="ynn-Yi-Ttq" firstAttribute="top" secondItem="8Mc-Cz-wN6" secondAttribute="bottom" constant="24" id="BGR-0z-46K"/>
+                            <constraint firstItem="8Mc-Cz-wN6" firstAttribute="top" secondItem="JpO-Fc-RnM" secondAttribute="bottom" constant="84" id="BrK-kv-8dh"/>
+                            <constraint firstItem="xgy-nW-Hhn" firstAttribute="trailing" secondItem="JpO-Fc-RnM" secondAttribute="trailing" constant="52" id="Ep6-MI-heS"/>
+                            <constraint firstItem="fUD-Kv-lv4" firstAttribute="centerX" secondItem="CTH-gT-0QY" secondAttribute="centerX" id="KVk-oX-bQN"/>
+                            <constraint firstItem="8Mc-Cz-wN6" firstAttribute="leading" secondItem="ynn-Yi-Ttq" secondAttribute="leading" id="Src-64-euQ"/>
+                            <constraint firstItem="CTH-gT-0QY" firstAttribute="top" secondItem="fUD-Kv-lv4" secondAttribute="bottom" constant="50" id="TuR-KR-hqx"/>
+                            <constraint firstItem="xgy-nW-Hhn" firstAttribute="bottom" secondItem="CTH-gT-0QY" secondAttribute="bottom" constant="112" id="jBs-5e-u59"/>
+                            <constraint firstItem="fUD-Kv-lv4" firstAttribute="top" secondItem="ynn-Yi-Ttq" secondAttribute="bottom" constant="25" id="ob7-NT-dP1"/>
+                            <constraint firstItem="JpO-Fc-RnM" firstAttribute="leading" secondItem="8Mc-Cz-wN6" secondAttribute="leading" id="qR3-wm-gEr"/>
+                            <constraint firstItem="ynn-Yi-Ttq" firstAttribute="leading" secondItem="fUD-Kv-lv4" secondAttribute="leading" id="qnD-i6-z6k"/>
+                            <constraint firstItem="8Mc-Cz-wN6" firstAttribute="trailing" secondItem="yr5-wj-Rfv" secondAttribute="trailingMargin" id="rfR-hu-T5Y"/>
+                            <constraint firstItem="ynn-Yi-Ttq" firstAttribute="trailing" secondItem="fUD-Kv-lv4" secondAttribute="trailing" id="udZ-uJ-gqu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mjj-mY-yl6"/>
+                    <connections>
+                        <outlet property="detoxNameTextField" destination="8Mc-Cz-wN6" id="hly-TG-Agg"/>
+                        <outlet property="detoxRecipeTextField" destination="fUD-Kv-lv4" id="nft-kO-JPf"/>
+                        <outlet property="imageView" destination="JpO-Fc-RnM" id="NFa-6z-Tzc"/>
+                        <outlet property="ingredientsTextField" destination="ynn-Yi-Ttq" id="txf-fM-ZnK"/>
+                        <outlet property="saveClicked" destination="CTH-gT-0QY" id="Euo-q1-HoC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwZ-ie-LQO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735.1145038167938" y="7.746478873239437"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sjt-7a-zYV">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kdk-ru-4U4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tZ7-Ko-78y">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UkK-wl-ndc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mat-yJ-tX2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="selectImage" width="1536" height="2048"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
